@@ -1,7 +1,7 @@
 <h1>All the lists</h1>
 
 <ul>
-  <% @lists.all do |list| %>
+  <% @lists.each do |list| %>
     <li><%= list.name %></li>
     <p><%= link_to "Show this list", list %></p>
   <% end %>
